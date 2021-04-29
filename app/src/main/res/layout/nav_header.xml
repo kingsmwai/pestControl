@@ -16,7 +16,7 @@
         android:layout_marginTop="15dp"
         android:layout_height="140dp"
         android:background="#DDEDCA"
-        android:src="@drawable/pest"
+        android:src="@drawable/control"
         tools:ignore="MissingConstraints"
         tools:layout_editor_absoluteX="38dp"
         tools:layout_editor_absoluteY="20dp" />

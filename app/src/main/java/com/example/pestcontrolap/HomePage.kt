@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
 import android.view.View
+import android.widget.Button
 import android.widget.ImageView
 import android.widget.TextView
 import android.widget.Toast
@@ -12,7 +13,7 @@ import kotlinx.android.synthetic.main.activity_home_page.*
 
 class HomePage : AppCompatActivity() {
     lateinit var pic1:ImageView
-    lateinit var pc2:ImageView
+    lateinit var next:Button
     lateinit var pic3:ImageView
     lateinit var text4:TextView
     lateinit var text5:TextView
@@ -22,7 +23,7 @@ class HomePage : AppCompatActivity() {
       val  pic1=findViewById<ImageView>(R.id.pic1)
        val pic2=findViewById<ImageView>(R.id.pic2)
        val pic3=findViewById<ImageView>(R.id.pic3)
-     val   text4=findViewById<TextView>(R.id.text4)
+     val   next=findViewById<TextView>(R.id.next)
       val  text5=findViewById<TextView>(R.id.text5)
 
         pic1.setOnClickListener(
@@ -32,10 +33,10 @@ class HomePage : AppCompatActivity() {
 
         })
 
-        pic3.setOnClickListener(View.OnClickListener {
-            val intentRelative  = Intent(this,FormActivity::class.java)
-            startActivity(intentRelative)
-            Log.d("check","selected" + intentRelative)
+        next.setOnClickListener(View.OnClickListener {
+            val intentnext  = Intent(this,FormActivity::class.java)
+            startActivity(intentnext)
+            Log.d("check","selected" + intentnext )
         })
 
         text5.setOnClickListener(View.OnClickListener {
