@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.pestcontrolap">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/pest"
+        android:label="@string/app_name"
+        android:roundIcon="@id/triangle"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.PestControlAp">
+        <activity android:name=".Details"></activity>
+        <activity android:name=".CustomList" />
+        <activity android:name=".MyList" />
+        <activity android:name=".Button_Nav" />
+        <activity android:name=".HomePage" />
+        <activity android:name=".RecyclerView" />
+        <activity android:name=".Navigationdrawer">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".AdvertActivity" />
+        <activity android:name=".Infor_Activity" />
+        <activity android:name=".FormActivity" />
+    </application>
+
+</manifest>

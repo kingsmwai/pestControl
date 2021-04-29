@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:title="@string/appnavigations">
+            <item
+                android:id="@+id/Form"
+                android:title="Form"
+                android:icon="@drawable/form"
+                android:iconTint="#3F51B5"
+                />
+
+            <item
+                android:id="@+id/Advert"
+                android:icon="@drawable/advert"
+                android:title="@string/AdvertActivity"
+                android:iconTint="#3F51B5"
+                />
+<!--        <item-->
+<!--            android:id="@+id/bottom"-->
+<!--            android:icon="@drawable/advert"-->
+<!--            android:title="bottom"-->
+<!--            android:iconTint="#3F51B5"-->
+<!--            />-->
+    </item>
+</menu>

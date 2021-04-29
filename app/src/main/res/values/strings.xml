@@ -1,0 +1,45 @@
+<resources>
+    <string name="app_name">PestControlAp</string>
+    <string name="enter_name">Enter Name</string>
+    <string name="enter_gender">enter_gender</string>
+    <string name="enter_houseno">enter_houseno</string>
+    <string name="enter_phone">enter_phone</string>
+    <string name="go_back">go back</string>
+    <string name="enter_full_names">enter_full_names</string>
+    <string name="enter_email">enter_email</string>
+    <string name="enter_visit_date">enter_email</string>
+    <string name="Choose_from_Moday_Friday">enter_email</string>
+    <string name="enter_Pest_to_control">enter_Pest_to_control</string>
+    <string name="selection">selection</string>
+    <string name="MainActivity">MainActivity</string>
+    <string name="SecondActivity">SecondActivity</string>
+    <string name="AdvertActivity">AdvertActivity</string>
+    <string name="open">open</string>
+    <string name="close">close</string>
+    <string name="mainactivity">mainactivity</string>
+    <string name="secondactivity">secondactivity</string>
+
+    <string name="PestControlSystem">PestControlSystem</string>
+    <string name="www_kpest">www_kpest</string>
+    <string name="enter">enter</string>
+    <string name="for_a_better_quality_deliver">for a better quality deliver</string>
+    <string name="they_deal_with_pest_control_on_the_following_rats_cockroaches_and_pet_pest_apart_from_pest_control_they_also_offer_cleaning_services">They deal with pest control on the following rats, cockroaches and pet pest. Apart from pest control they also offer cleaning services.</string>
+    <string name="for_a_better_quality_delivery">for_a_better_quality_delivery</string>
+    <string name="advert1">Advert</string>
+    <string name="form">Form!</string>
+
+    <string name="advertt">Advert</string>
+    <string name="appnavigations">AppNavigations</string>
+    <string-array name="PestControlSystem">
+        <!--        <item>Gender:Male</item>-->
+        <!--        <item>HouseNo:16</item>-->
+        <item>phone contact: 0741998165</item>
+        <item>Email:mwaikings4@gmail.com</item>
+        <!--        <item>Website:kingsmwai.github.io:</item>-->
+        <!--        <item>Pest:Rat,Coackroaches,Pets</item>-->
+        <!--        <item>DateforVisit:Monday,Tuesday,Wednesday</item>-->
+        <item>Custom Listview:</item>
+    </string-array>
+
+
+</resources>

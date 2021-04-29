@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:gravity="center"
+    android:layout_marginTop="100dp"
+    android:background="#99EC96"
+    android:layout_marginBottom="40dp"
+    android:id="@+id/FormActivity"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".FormActivity">
+
+    <EditText
+        android:id="@+id/OccupantsName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:hint="@string/enter_full_names" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:textColor="@color/black"
+        android:layout_height="wrap_content"
+        android:hint="@string/enter_gender"
+        android:id="@+id/Gender"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/enter_houseno"
+        android:textColor="@color/black"
+        android:id="@+id/Houseno"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/enter_phone"
+        android:textColor="@color/black"
+        android:id="@+id/Phone"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/enter_email"
+        android:textColor="@color/black"
+        android:id="@+id/Email"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:textColor="@color/black"
+        android:layout_height="wrap_content"
+        android:hint="@string/enter_Pest_to_control"
+        android:id="@+id/PestControl"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:textColor="@color/black"
+         android:layout_height="wrap_content"
+        android:hint="@string/enter_visit_date"
+        android:id="@+id/Visitdate"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:id="@+id/SaveBtn"
+        android:text="Save"
+        android:gravity="bottom"
+        android:layout_height="wrap_content"/>
+
+
+
+
+</LinearLayout>

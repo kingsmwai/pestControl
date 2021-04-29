@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/nav_form"
+        android:title="@string/form"
+        android:icon="@drawable/form"
+        android:iconTint="#EC1A0B"
+
+        />
+    <item
+        android:id="@+id/nav_advert"
+        android:icon="@drawable/advert"
+        android:title="@string/advertt"
+        android:iconTint="#F44336"
+
+        />
+
+
+</menu>

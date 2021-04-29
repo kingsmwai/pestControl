@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:layout_marginTop="100dp"
+    android:layout_marginBottom="100dp"
+    android:background="#CDD6CDDC"
+    android:orientation="vertical"
+    tools:context=".Infor_Activity">
+
+    <TextView
+        android:id="@+id/resultTv"
+        android:layout_width="355dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginEnd="12dp"
+        android:textColor="#4668E1"
+        android:textSize="25sp"
+        android:textColorHint="@color/black"
+        android:textAllCaps="false"
+        android:textStyle="bold" />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_marginBottom="13dp"
+        android:text="@string/go_back"
+        android:textColor="@color/black"
+        android:id="@+id/gobackbtn"
+        android:layout_height="wrap_content"/>
+
+
+</LinearLayout>
