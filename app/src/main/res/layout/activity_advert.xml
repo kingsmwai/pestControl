@@ -7,27 +7,26 @@
     android:id="@+id/Advert"
     android:layout_height="match_parent"
     android:background="#B9E8D6E7"
-    android:layout_marginTop="100dp"
+    android:layout_marginTop="80dp"
     android:layout_marginBottom="300dp"
-    tools:context=".AdvertActivity">
-    <androidx.recyclerview.widget.RecyclerView
+    tools:context=".Infor_Activity">
+
+    <SearchView
         android:layout_width="match_parent"
-        android:layout_marginStart="4dp"
-        android:background="#EDDEEF"
+        android:id="@+id/searchmode"
+        android:background="@drawable/backshape"
+        android:layout_margin="20dp"
+        android:layout_height="wrap_content"
+        tools:ignore="MissingConstraints" />
+
+    <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/rv_recyclerView"
-        android:layout_marginTop="4dp"
-        android:layout_marginBottom="4dp"
-        android:layout_marginEnd="4dp"
+        android:layout_width="401dp"
+        android:layout_height="271dp"
+        android:background="#EDDEEF"
         tools:itemCount="5"
-        android:layout_height="match_parent"
-        tools:ignore="InvalidId" />
-<!--    <Button-->
-<!--        android:id="@+id/move"-->
-<!--        android:layout_width="167dp"-->
-<!--        android:layout_height="wrap_content"-->
-<!--        android:text="@string/enter"-->
-<!--        android:textColor="@color/black"-->
-<!--        tools:ignore="MissingConstraints"-->
-<!--        tools:layout_editor_absoluteX="82dp"-->
-<!--        tools:layout_editor_absoluteY="533dp" />-->
+        tools:layout_editor_absoluteX="11dp"
+        tools:layout_editor_absoluteY="80dp"
+        tools:ignore="MissingConstraints" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

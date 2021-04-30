@@ -4,6 +4,7 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.MenuItem
+import android.webkit.WebView
 import androidx.appcompat.app.ActionBarDrawerToggle
 import androidx.drawerlayout.widget.DrawerLayout
 import androidx.fragment.app.Fragment
@@ -37,14 +38,10 @@ class Navigationdrawer : AppCompatActivity() {
                     startActivity(intentFormActivity)
 
                 }
-               R.id.button_view -> {
-                    val intentBottom = Intent(this@Navigationdrawer,Button_Nav::class.java)
-                    startActivity(intentBottom)
+              R.id.Search -> {
+                    val inteSearch = Intent(this@Navigationdrawer,webviewSearch::class.java)
+                    startActivity(inteSearch)
                 }
-//                R.id.move -> {
-//                    val intentMove = Intent(this@Navigationdrawer,AdvertActivity::class.java)
-//                    startActivity(intentMove)
-//                }
                 R.id.Advert ->{
                     val intentMove = Intent(this@Navigationdrawer,MyList::class.java)
                     startActivity(intentMove)

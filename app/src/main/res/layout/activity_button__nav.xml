@@ -7,6 +7,10 @@
     android:layout_height="match_parent"
     tools:context=".Button_Nav">
     <include  layout="@layout/activity_home_page"/>
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="650dp"
+        android:id="@+id/frame"/>
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:layout_width="match_parent"

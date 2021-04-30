@@ -16,14 +16,13 @@ class HomePage : AppCompatActivity() {
     lateinit var next:Button
     lateinit var pic3:ImageView
     lateinit var text4:TextView
-    lateinit var text5:TextView
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_home_page)
       val  pic1=findViewById<ImageView>(R.id.pic1)
        val pic2=findViewById<ImageView>(R.id.pic2)
-       val pic3=findViewById<ImageView>(R.id.pic3)
-     val   next=findViewById<TextView>(R.id.next)
+       val next=findViewById<Button>(R.id.next)
+//     val   next=findViewById<TextView>(R.id.next)
       val  text5=findViewById<TextView>(R.id.text5)
 
         pic1.setOnClickListener(
@@ -34,7 +33,7 @@ class HomePage : AppCompatActivity() {
         })
 
         next.setOnClickListener(View.OnClickListener {
-            val intentnext  = Intent(this,FormActivity::class.java)
+            val intentnext  = Intent(this,homepage1::class.java)
             startActivity(intentnext)
             Log.d("check","selected" + intentnext )
         })

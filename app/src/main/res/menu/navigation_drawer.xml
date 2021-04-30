@@ -15,11 +15,14 @@
                 android:title="@string/AdvertActivity"
                 android:iconTint="#3F51B5"
                 />
-<!--        <item-->
-<!--            android:id="@+id/bottom"-->
-<!--            android:icon="@drawable/advert"-->
-<!--            android:title="bottom"-->
-<!--            android:iconTint="#3F51B5"-->
-<!--            />-->
-    </item>
+          <menu>
+                <item
+                    android:title="@string/Search"
+                    android:id="@+id/Search"
+                    android:icon="@drawable/search"
+                    android:iconTint="@color/black">
+
+                </item>
+            </menu>
+            </item>
 </menu>

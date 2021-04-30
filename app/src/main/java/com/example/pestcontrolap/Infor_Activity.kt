@@ -6,11 +6,9 @@ import android.widget.Button
 import android.widget.TextView
 
 class Infor_Activity : AppCompatActivity() {
-    lateinit var gobackbtn: Button
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.infor_activity)
-         val gobackbtn = findViewById<Button>(R.id.gobackbtn)
 
 
         val intent = intent
@@ -26,10 +24,7 @@ class Infor_Activity : AppCompatActivity() {
         //set text
         resultTv.text = "OccupantsName : "+ Name +"\nGender: "+ Gender+"\nHouseno : "+Houseno+ "\nPhone : "+Phone+ "\nEmail :"+Email+
                 "\nPestControl: "+PestControl+ "\nVisitDate : "+Visitdate
-        gobackbtn.setOnClickListener{
 
-
-        }
 
 
     }

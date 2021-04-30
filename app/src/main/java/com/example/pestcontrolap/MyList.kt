@@ -41,9 +41,9 @@ class MyList : AppCompatActivity() {
                 {
                     startActivity(intent)
                 }
-                 }else if (position==4){
-                val intentCustomlistView= Intent(this,CustomList::class.java)
-                startActivity(intentCustomlistView)
+                 }else if (position==3){
+                val intentCustomList= Intent(this,CustomList::class.java)
+                startActivity(intentCustomList)
             }
             }
         }
