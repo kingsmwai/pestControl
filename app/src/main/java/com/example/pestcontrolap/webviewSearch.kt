@@ -22,7 +22,8 @@ class webviewSearch : AppCompatActivity() {
 
         webview.apply {
 //            loadUrl("https://pestweb.com/")
-            loadUrl("https://www.youtube.com/watch?v=47x4efsgHiM")
+//            loadUrl("https://www.youtube.com/watch?v=47x4efsgHiM")
+            loadUrl("https://www.pestworldforkids.org/pest-guide/ants/")
             settings.javaScriptEnabled = true
             settings.javaScriptEnabled = true
             settings.allowFileAccess = true

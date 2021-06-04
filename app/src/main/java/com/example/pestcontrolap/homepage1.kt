@@ -1,47 +1,99 @@
 package com.example.pestcontrolap
 
 import android.content.Intent
+import android.net.Uri
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.os.Handler
-import android.view.WindowManager
-import android.view.animation.Animation
-import android.view.animation.AnimationUtils
-import android.widget.ImageView
-import android.widget.TextView
+import android.util.Log
+import android.view.View
+import android.widget.*
+import androidx.cardview.widget.CardView
 
 class homepage1 : AppCompatActivity() {
-    val SPLASH_SCREEN = 5000
-    private lateinit var top :Animation
-    private lateinit var bottom :Animation
-    private lateinit var imagepest:ImageView
-    private lateinit var pesttext:TextView
-    private lateinit var imagepest2:ImageView
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_homepage1)
-        window.setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,WindowManager.LayoutParams.FLAG_FULLSCREEN)
-        setContentView(R.layout.activity_homepage1)
+//        val backB: ImageButton = findViewById(R.id.backB)
+//        val logOutB: ImageButton = findViewById(R.id.logOutB)
+        val profileB: ImageButton = findViewById(R.id.profileB)
 
-        val actionBar = supportActionBar
-        actionBar!!.hide()
+        // Button
+        val todoB: Button = findViewById(R.id.todoB)
+        val editProfileB: Button = findViewById(R.id.editProfileB)
 
-        top = AnimationUtils.loadAnimation(this,R.anim.top)
-        bottom = AnimationUtils.loadAnimation(this,R.anim.bottom)
+        //  card views
+        val contributeCard: CardView = findViewById(R.id.onrats)
+        val practiceCard: CardView = findViewById(R.id.onbedburgs)
+        val learnCard: CardView = findViewById(R.id.onants)
+        val interestsCard: CardView = findViewById(R.id.ontermites)
+        val helpCard: CardView = findViewById(R.id.onwoodbooer)
+        val calling: ImageView = findViewById(R.id.calling)
+        val emailing: ImageView = findViewById(R.id.emailing)
+        val settingsCard: CardView = findViewById(R.id.onhousefly)
 
-        imagepest = findViewById(R.id.imagepest)
-        imagepest2 = findViewById(R.id.imgepest2)
-        pesttext = findViewById(R.id.pesttext)
 
-        imagepest.animation = top
-        imagepest2.animation = bottom
-        pesttext.animation = top
+        // handle each of the image buttons with the OnClickListener
+//        backB.setOnClickListener {
+//            Toast.makeText(this, "Back Button", Toast.LENGTH_SHORT).show()
+//        }
+//        logOutB.setOnClickListener {
+//            Toast.makeText(this, "Logout Button", Toast.LENGTH_SHORT).show()
+//        }
+        profileB.setOnClickListener(View.OnClickListener {
+            val intentAdvert= Intent(this,HomePage::class.java)
+            startActivity(intentAdvert)        })
 
-        Handler().postDelayed({
-            val intent = Intent(this,HomePage::class.java)
-            startActivity(intent)
-            finish()
-        }, SPLASH_SCREEN.toLong())
+
+        //  OnClickListener
+        todoB.setOnClickListener(View.OnClickListener {
+            val intentAdvert= Intent(this,FormActivity::class.java)
+            startActivity(intentAdvert)        })
+        editProfileB.setOnClickListener(View.OnClickListener {
+            val intentAdvert= Intent(this,HomePage::class.java)
+            startActivity(intentAdvert)        })
+
+
+        //  OnClickListener
+        contributeCard.setOnClickListener(View.OnClickListener  {
+            val intentAdvert= Intent(this,Rats::class.java)
+            startActivity(intentAdvert)
+        })
+        practiceCard.setOnClickListener (View.OnClickListener {
+            val intentAdvert= Intent(this,Bedbugs::class.java)
+            startActivity(intentAdvert)        })
+        learnCard.setOnClickListener(View.OnClickListener {
+            val intentAdvert= Intent(this,Ants::class.java)
+            startActivity(intentAdvert)        })
+        interestsCard.setOnClickListener (View.OnClickListener{
+            val intentAdvert= Intent(this,Termites::class.java)
+            startActivity(intentAdvert)        })
+        helpCard.setOnClickListener(View.OnClickListener {
+            val intentAdvert= Intent(this,Woodboorer::class.java)
+            startActivity(intentAdvert)        })
+        settingsCard.setOnClickListener (View.OnClickListener{
+            val intentAdvert= Intent(this,Housefly::class.java)
+            startActivity(intentAdvert)        })
+        calling.setOnClickListener (View.OnClickListener{
+            val dialIntent = Intent(Intent.ACTION_DIAL)
+            dialIntent.data= Uri.parse("tel:"+"0741998165")
+            startActivity(dialIntent)
+
+        })
+        emailing.setOnClickListener (View.OnClickListener{
+            val addresses = "mwaikings4@gmail.com"
+            val subject = "works"
+            val intent = Intent(Intent.ACTION_SENDTO)
+            intent.setData(Uri.parse("mailto:"))
+            intent.putExtra(Intent.EXTRA_EMAIL, addresses)
+            intent.putExtra(Intent.EXTRA_SUBJECT, subject)
+            if (intent.resolveActivity(getPackageManager()) != null)
+            {
+                startActivity(intent)
+            }
+        })
+
+
     }
+
 }

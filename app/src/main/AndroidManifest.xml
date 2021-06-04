@@ -11,32 +11,34 @@
         android:roundIcon="@id/triangle"
         android:supportsRtl="true"
         android:theme="@style/Theme.PestControlAp">
-        <activity android:name=".homepage1"
-            android:parentActivityName=".HomePage">
-
-        </activity>
+        <activity android:name=".SQLiteDataActivity"></activity>
+        <activity android:name=".Upload_image"></activity>
+        <activity android:name=".Loging" />
+        <activity android:name=".Regi" />
+        <activity android:name=".Rats" />
+        <activity android:name=".Housefly" />
+        <activity android:name=".Woodboorer" />
+        <activity android:name=".Termites" />
+        <activity android:name=".Ants" />
+        <activity android:name=".Bedbugs" />
+        <activity android:name=".Advert" />
+        <activity android:name=".Prevention" />
+        <activity android:name=".homepage1" />
         <activity
             android:name=".webviewSearch"
-            android:parentActivityName=".HomePage">
-
-        </activity>
-        <activity
-            android:name=".CustomList"
             android:parentActivityName=".HomePage" />
-        <activity
-            android:name=".MyList"
-            android:parentActivityName=".HomePage" />
-        <activity android:name=".Button_Nav" />
-        <activity
-            android:name=".HomePage"
-            android:parentActivityName=".HomePage" />
-        <activity android:name=".Navigationdrawer">
+        <activity android:name=".Launcher">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".Bottom_nav"></activity>
+        <activity
+            android:name=".HomePage"
+            android:parentActivityName=".HomePage" />
+        <activity android:name=".Navigationdrawer" />
         <activity
             android:name=".Infor_Activity"
             android:parentActivityName=".HomePage" />

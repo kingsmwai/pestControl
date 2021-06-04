@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="#DDE5EC"
+    android:layout_height="match_parent"
+    tools:context=".Rats">
+
+   <ScrollView
+       android:layout_width="match_parent"
+       android:layout_marginStart="10dp"
+       android:layout_marginEnd="10dp"
+       android:layout_height="match_parent">
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           android:orientation="vertical">
+
+           <TextView
+               android:id="@+id/textView17"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:text="Rats Control"
+               android:textAlignment="textStart"
+               android:textColor="@color/black"
+               android:textSize="20sp"
+               android:textStyle="bold"
+               app:layout_constraintBottom_toBottomOf="parent"
+               app:layout_constraintEnd_toEndOf="parent"
+               app:layout_constraintHorizontal_bias="0.0"
+               app:layout_constraintStart_toStartOf="parent"
+
+               app:layout_constraintTop_toTopOf="parent"
+               app:layout_constraintVertical_bias="0.022" />
+
+           <ImageView
+               android:id="@+id/imageView4"
+               android:layout_width="300dp"
+               android:layout_height="182dp"
+               android:layout_marginStart="50dp"
+               android:src="@drawable/ratt"
+               android:tintMode="multiply"
+               android:tint="#DDE5EC"
+               app:layout_constraintBottom_toBottomOf="parent"
+               app:layout_constraintEnd_toEndOf="parent"
+               app:layout_constraintHorizontal_bias="0.495"
+               app:layout_constraintStart_toStartOf="parent"
+               app:layout_constraintTop_toTopOf="parent"
+               app:layout_constraintVertical_bias="0.078" />
+
+           <TextView
+               android:id="@+id/textView18"
+               android:layout_width="406dp"
+               android:layout_marginStart="10dp"
+               android:layout_height="149dp"
+               android:lineSpacingExtra="5dp"
+               android:text="Rats are various medium-sized, long-tailed rodents. Species of rats are found throughout the order Rodentia, but stereotypical rats are found in the genus Rattus. ... Generally, when someone discovers a large muroid rodent, its common name includes the term rat, while if it is smaller, its name includes the term mouse.
+"
+               android:textColor="@color/black"
+               android:textSize="15sp"
+               android:textStyle="normal"
+               app:layout_constraintBottom_toBottomOf="parent"
+               app:layout_constraintEnd_toEndOf="parent"
+               app:layout_constraintHorizontal_bias="0.0"
+               app:layout_constraintStart_toStartOf="parent"
+               app:layout_constraintTop_toBottomOf="@+id/imageView4"
+               app:layout_constraintVertical_bias="0.0" />
+
+           <TextView
+               android:id="@+id/textView19"
+               android:layout_width="391dp"
+               android:layout_height="17dp"
+               android:text="Services Offered"
+               android:textAlignment="center"
+               android:textColor="#EF1818"
+               android:textSize="15sp"
+               android:textStyle="bold"
+               app:layout_constraintBottom_toBottomOf="parent"
+               app:layout_constraintEnd_toEndOf="parent"
+               app:layout_constraintHorizontal_bias="0.0"
+               app:layout_constraintStart_toStartOf="parent"
+               app:layout_constraintTop_toBottomOf="@+id/textView18"
+               app:layout_constraintVertical_bias="0.0" />
+
+           <ImageView
+               android:layout_width="376dp"
+               android:layout_marginStart="10dp"
+               android:layout_marginEnd="10dp"
+               android:src="@drawable/ratww"
+               android:tint="#DDE5EC"
+               android:tintMode="multiply"
+               android:layout_height="148dp" />
+
+           <TextView
+               android:layout_width="match_parent"
+               android:layout_height="match_parent"
+               android:layout_marginStart="10dp"
+               android:text="Rodenticides are poison baits and should be used in areas where domestic animals and children can't access them.
+
+For protection against accidental poisoning, use tamper-resistant bait stations that hold the baits in place and keep children and pets out.
+
+It is a national law and guideline to use tamper-resistant bait stations in areas where children or pets can access.
+
+We carry single feed bait (requires just one feeding for a lethal dose.)
+
+Rat Baits come in pellets, meal, and block forms.\n
+Trapping does have some advantages over baiting. It provides an alternative for those who do not want to place rodenticides.
+
+If the rat population is small enough, trapping can yield quick results when done properly.
+
+Finally, trapping ensures that you can dispose of the dead rats before their odor becomes a problem in an inaccessible area."
+               android:textSize="17sp"
+               android:textColor="@color/black"
+               android:lineSpacingExtra="5dp"
+               android:textStyle="normal"
+               app:layout_constraintBottom_toBottomOf="parent"
+               app:layout_constraintEnd_toEndOf="parent"
+               app:layout_constraintHorizontal_bias="0.0"
+               app:layout_constraintStart_toStartOf="parent"
+               app:layout_constraintTop_toBottomOf="@+id/textView19"
+               app:layout_constraintVertical_bias="0.0" />
+       </LinearLayout>
+
+   </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

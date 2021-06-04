@@ -1,69 +1,107 @@
-<?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:gravity="center"
-    android:layout_marginTop="100dp"
-    android:background="#99EC96"
-    android:layout_marginBottom="40dp"
-    android:id="@+id/FormActivity"
-    android:orientation="vertical"
+    android:layout_marginStart="20dp"
+    android:layout_marginEnd="20dp"
+    android:layout_marginTop="30dp"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context=".FormActivity">
 
-    <EditText
-        android:id="@+id/OccupantsName"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:textColor="@color/black"
-        android:hint="@string/enter_full_names" />
 
-    <EditText
-        android:layout_width="match_parent"
-        android:textColor="@color/black"
-        android:layout_height="wrap_content"
-        android:hint="@string/enter_gender"
-        android:id="@+id/Gender"/>
-    <EditText
+    <com.google.android.material.textfield.TextInputLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="@string/enter_houseno"
-        android:textColor="@color/black"
-        android:id="@+id/Houseno"/>
-    <EditText
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="@string/enter_phone"
-        android:textColor="@color/black"
-        android:id="@+id/Phone"/>
-    <EditText
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="@string/enter_email"
-        android:textColor="@color/black"
-        android:id="@+id/Email"/>
-    <EditText
-        android:layout_width="match_parent"
-        android:textColor="@color/black"
-        android:layout_height="wrap_content"
-        android:hint="@string/enter_Pest_to_control"
-        android:id="@+id/PestControl"/>
-    <EditText
-        android:layout_width="match_parent"
-        android:textColor="@color/black"
-         android:layout_height="wrap_content"
-        android:hint="@string/enter_visit_date"
-        android:id="@+id/Visitdate"/>
+        android:paddingBottom="20sp"
+        android:hint="First Name">
 
+        <EditText
+            android:id="@+id/firstName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:paddingBottom="20sp"
+        android:layout_height="wrap_content"
+        android:hint="Last Name">
+
+        <EditText
+            android:id="@+id/lastName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:paddingBottom="20sp"
+        android:layout_height="wrap_content"
+        android:hint="Phone number">
+        <EditText
+            android:layout_width="match_parent"
+            android:inputType="number"
+            android:id="@+id/Phone_no"
+            android:layout_height="wrap_content"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:paddingBottom="20sp"
+        android:hint="Pest_to_control"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="pest to control"
+            android:id="@+id/Pest"
+            android:layout_height="wrap_content"/>
+        <Spinner
+            android:layout_width="match_parent"
+            android:id="@+id/Spinner"
+            android:layout_height="wrap_content"/>
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:hint="Visit_date"
+        android:paddingBottom="20sp"
+        android:layout_height="wrap_content">
+        <EditText
+            android:layout_width="match_parent"
+            android:inputType="datetime"
+            android:id="@+id/Visit_date"
+            android:layout_height="wrap_content"/>
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="20sp"
+        android:hint="Email">
+        <EditText
+            android:layout_width="match_parent"
+            android:id="@+id/Email"
+            android:inputType="textEmailAddress"
+            android:layout_height="wrap_content"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:hint="House_no"
+        android:layout_height="wrap_content">
+        <EditText
+            android:layout_width="match_parent"
+            android:id="@+id/House_no"
+            android:inputType="number"
+            android:layout_height="wrap_content"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
     <Button
         android:layout_width="wrap_content"
-        android:id="@+id/SaveBtn"
-        android:text="Save"
-        android:gravity="bottom"
+        android:text="submit"
+        android:id="@+id/btnsend"
         android:layout_height="wrap_content"/>
 
-
-
-
 </LinearLayout>
+

@@ -3,40 +3,62 @@ package com.example.pestcontrolap
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.widget.Button
-import android.widget.EditText
+import android.view.View
+import android.widget.*
 
-class FormActivity : AppCompatActivity() {
+class FormActivity : AppCompatActivity(),AdapterView.OnItemSelectedListener {
+    lateinit var spinner: Spinner
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.formactivity)
-        val name = findViewById<EditText>(R.id.OccupantsName)
-        val gender = findViewById<EditText>(R.id.Gender)
-        val houseno = findViewById<EditText>(R.id.Houseno)
-        val phone = findViewById<EditText>(R.id.Phone)
-        val email = findViewById<EditText>(R.id.Email)
-        val pestcontrol = findViewById<EditText>(R.id.PestControl)
-        val visitdate = findViewById<EditText>(R.id.Visitdate)
-        val saveBtn = findViewById<Button>(R.id.SaveBtn)
+        spinner= findViewById(R.id.Spinner)
+        val adapter = ArrayAdapter.createFromResource(
+                this,
+                R.array.pest,
+                android.R.layout.simple_spinner_item
+        )
+        adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item)
+        spinner.adapter = adapter
+        spinner.onItemSelectedListener = this
 
-        saveBtn.setOnClickListener{
-            val Name = name.text.toString()
-            val Gender = gender.text.toString()
-            val Houseno = houseno.text.toString()
-            val Phone = phone.text.toString()
+
+        val firstname = findViewById<EditText>(R.id.firstName)
+        val lastName = findViewById<TextView>(R.id.lastName)
+        val pest = findViewById<TextView>(R.id.Pest)
+        val phone_no = findViewById<EditText>(R.id.Phone_no)
+        val house_no = findViewById<EditText>(R.id.House_no)
+        val visit_date = findViewById<EditText>(R.id.Visit_date)
+        val email = findViewById<EditText>(R.id.Email)
+        val btnsend = findViewById<Button>(R.id.btnsend)
+        btnsend.setOnClickListener{
+            val Name = firstname.text.toString()
+            val Gender = lastName.text.toString()
+            val Houseno = house_no.text.toString()
+            val Phone = phone_no.text.toString()
             val Email = email.text.toString()
-            val PestControl = pestcontrol.text.toString()
-            val Visitdate = visitdate.text.toString()
+            val PestControl = visit_date.text.toString()
+
 
             val intent = Intent(this@FormActivity, Infor_Activity::class.java)
-            intent.putExtra("OccupantsName",Name)
+            intent.putExtra("firstName",Name)
             intent.putExtra("Gender",Gender)
+            intent.putExtra("LastName",Name)
             intent.putExtra("Houseno",Houseno)
             intent.putExtra("Email",Email)
             intent.putExtra("PestControl",PestControl)
-            intent.putExtra("Visitdate",Visitdate)
             intent.putExtra("Phone",Phone)
             startActivity(intent)
+
         }
+
     }
+
+
+
+    override fun onItemSelected(parent: AdapterView<*>?, view: View?, position: Int, id: Long) {
+    }
+
+    override fun onNothingSelected(parent: AdapterView<*>?) {
+    }
+
 }

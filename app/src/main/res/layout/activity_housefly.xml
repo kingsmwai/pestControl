@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="#D6D1D1"
+    android:layout_height="match_parent"
+    tools:context=".Housefly">
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/textView15"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:text="HouseFly Control"
+            android:textAlignment="textStart"
+            android:textColor="@color/black"
+            android:textSize="25dp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.022" />
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="306dp"
+            android:layout_marginStart="50dp"
+            android:layout_height="202dp"
+            android:src="@drawable/housefly"
+            android:tintMode="multiply"
+            android:tint="#D6D1D1"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView15"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <TextView
+            android:id="@+id/textView16"
+            android:layout_width="414dp"
+            android:layout_height="125dp"
+            android:layout_marginStart="10dp"
+            android:lineSpacingExtra="5dp"
+            android:text="The housefly (Musca domestica) is a fly of the suborder Cyclorrhapha. It is believed to have evolved in the Cenozoic Era, possibly in the Middle East, and has spread all over the world as a commensal of humans. ... Adult flies normally live for two to four weeks, but can hibernate during the winte"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            android:textStyle="normal"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.666"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView2"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Services Offered"
+            android:textColor="#D81E1E"
+            android:textStyle="bold"
+            android:layout_marginStart="10dp"
+            android:textSize="15dp"
+            android:textAlignment="center"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView16"
+            app:layout_constraintVertical_bias="0.0"
+            tools:layout_editor_absoluteX="-16dp" />
+        <TextView
+            android:layout_width="match_parent"
+            android:textSize="17sp"
+            android:layout_marginStart="10dp"
+            android:textStyle="normal"
+            android:textColor="@color/black"
+            android:text="1. Diatomaceous earth (silicon dioxide)\n
+2. Glass cleaner and liquid detergent\n
+3. Hand soap\n
+4. Peppe\n
+5. Peppermint\n
+6. Tea tree oil\n
+7. Lemon eucalyptus oil\n
+8. Oil of lemon eucalyptus (OLE)\n
+9. White vinegar\n
+10. Boiling water\n
+11. Cornstarch\n
+12. Cinnamon leaf essential oil
+"
+            android:layout_height="match_parent"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:textStyle="italic"
+            android:textColor="#6317EA"
+            android:textSize="17sp"
+            android:layout_marginStart="20dp"
+            android:text="If nothing works\n
+"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:textSize="17sp"
+            android:textColor="@color/black"
+            android:textStyle="normal"
+            android:lineSpacingExtra="5dp"
+            android:text="
+If natural options aren’t enough, you can use pesticides and commercially prepared products to eradicate ants.
+
+\nBait traps that contain pesticides in an enclosed form may be preferable for some people over sprays. Bait traps work by attracting ants to them. The ants eat the bait and bring some of it back to their nests, killing off other ants.
+
+\nAnts also eat dead ants and absorb the pesticide that way. Some bait traps contain boric acid or borax. Others contain hydramethylnon, a chemical compound that’s dangerous for children, pets, and growing food, such as tomato plants.
+
+\nYou can find ant traps at many hardware and gardening stores as well as online. Check the ingredients if you’re avoiding toxins before you buy.
+
+\nThere are also nontoxic commercial repellant sprays that are all-natural and work on ant control.
+
+\nRaid is a chemical spray that can be very effective on ants. It’s long-lasting, but does contain imiprothrin and cypermethrin, two chemical compounds that shouldn’t be inhaled or ingested.
+
+\nIf all else fails, hiring an exterminator can help. Look for one who’s committed to using the least toxic products possible. Let them know if you have children, pets, or other concerns, such as a respiratory health condition.
+
+Some professional exterminators use words like green, organic, or eco-friendly in their titles. That’s not enough to ensure that they’re truly green. Ask them what substances they typically use in ant treatments and which ones they avoid before you hire them."
+            android:layout_height="match_parent"
+            />
+    </LinearLayout>
+</ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -42,11 +42,11 @@ class Navigationdrawer : AppCompatActivity() {
                     val inteSearch = Intent(this@Navigationdrawer,webviewSearch::class.java)
                     startActivity(inteSearch)
                 }
-                R.id.Advert ->{
-                    val intentMove = Intent(this@Navigationdrawer,MyList::class.java)
-                    startActivity(intentMove)
-
+                R.id.Advert -> {
+                    val intentPrevention = Intent(this@Navigationdrawer,webviewSearch::class.java)
+                    startActivity(intentPrevention)
                 }
+
             }
             true
         }

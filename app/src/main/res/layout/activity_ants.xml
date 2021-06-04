@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="#B9BFBF"
+    android:layout_height="match_parent"
+    tools:context=".Ants">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="match_parent">
+
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="144dp"
+        android:layout_height="27dp"
+        android:text="Ants Control"
+        android:textAlignment="textStart"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.011"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.022" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:backgroundTintMode="screen"
+        android:layout_width="277dp"
+        android:layout_height="183dp"
+        app:tint="#B9BFBF"
+        android:src="@drawable/ants"
+        android:tintMode="multiply"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.423"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView12"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="408dp"
+        android:layout_height="142dp"
+        android:lineSpacingExtra="5dp"
+        android:text="They are social insects, which means they live in large colonies or groups. Depending on the species, ant colonies can consist of millions of ants. There are three kinds of ants in a colony: The queen, the female workers, and males. The queen and the males have wings, while the workers don't have wings."
+        android:textColor="@color/black"
+        android:textSize="17sp"
+        android:textStyle="normal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/textView14"
+        android:layout_width="370dp"
+        android:layout_height="19dp"
+        android:text="Services Offered"
+        android:textAlignment="center"
+        android:textColor="#DA4141"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView13"
+        app:layout_constraintVertical_bias="0.0" />
+            <TextView
+                android:layout_width="match_parent"
+                android:textStyle="normal"
+                android:textColor="@color/black"
+                android:textSize="17sp"
+                android:lineSpacingExtra="5dp"
+                android:text="Know the types of ants\n
+\nThere are numerous species of ants scattered across the world. Some of the more common ant species in the U.S. include:
+
+Carpenter ants - these ants do not eat wood, but they like to live in it. They burrow in and set up elaborate nests that can significantly damage wood structures.
+Fire ants - these are the small red ants that can create huge swarms when a nest is disturbed or destroyed. Red fire ants are one of the few species in North America that does sting and it can be quite painful.
+Argentine ants - found mostly in South America, these ants love to eat sugar and anything sweet. Once they get into your home they will leave trails to attract the rest of the hive and get into food, especially anything sweet.
+Pharaoh ants - an ant found in Africa that really loves to create nests indoors. They reproduce fast and can infest an entire office building in a matter of weeks. They eat nearly any kind of food and will even destroy fabrics like silk and rayon.
+Thief ants - these ants love to eat proteins like meat, blood, fats, other insects, etc. Once they end up inside a home they are hard to find because they are extremely small, meaning they can also get into areas that other ants do not and travel far to find food.
+Sugar ants - named for their tendency to feed sweet items, normally seen around a home kitchen, sometimes in bathrooms.
+Harvester ants - a beared ant that is commonly found outdoors.
+Black house ants - these nuisance ants scavenge in kitchens, garbage and also dog excrement, therefore potentially spreading diseases such as salmonella.
+Odorous house ants - known and named for the strong rotten coconut or rancid butter smell that results from them being squished. "
+                android:layout_height="match_parent"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="methods"
+                android:textStyle="bold"
+                android:textColor="#E11C1C"
+                android:textSize="20dp"
+                android:textAlignment="center"
+                android:textAllCaps="true"
+                android:layout_height="wrap_content"/>
+
+
+    <TextView
+        android:layout_width="405dp"
+        android:layout_height="242dp"
+        android:layout_marginBottom="112dp"
+        android:text="The first step in eliminating an ant infestation in your home is to identify the species of ant. Not all ants are created equal; therefore understanding their biology and the specific species differences is critical in order to develop the proper control strategy that must be used to get rid of ants from your home. And do-it-yourself ant control methods usually are not effective. The experts at Western Exterminator can help with ant control and recommend the best solution for your ant problem."
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:textStyle="normal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+            <Button
+                android:layout_width="60dp"
+                android:id="@+id/more"
+                android:backgroundTint="@color/teal_200"
+                android:text="More"
+                android:textSize="10dp"
+                android:textColor="#F62212"
+                android:layout_marginStart="50dp"
+                android:textStyle="bold"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

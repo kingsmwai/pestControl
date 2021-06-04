@@ -1,106 +1,76 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
+<androidx.coordinatorlayout.widget.CoordinatorLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:orientation="vertical"
-    android:layout_marginTop="40dp"
-    android:layout_marginBottom="100dp"
-    android:background="#00FFFF"
     android:layout_height="match_parent"
     tools:context=".HomePage">
 
-    <ScrollView
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appBarLayout"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="wrap_content"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
 
-        <androidx.constraintlayout.widget.ConstraintLayout
+          <com.google.android.material.appbar.CollapsingToolbarLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
-
-<!--            <WebView-->
-<!--                android:layout_width="match_parent"-->
-<!--                android:layout_height="wrap_content"-->
-<!--                android:id="@+id/webview"-->
-<!--                />-->
+            android:layout_height="wrap_content"
+            app:contentScrim="@color/black"
+            app:layout_scrollFlags="scroll|snap|exitUntilCollapsed"
+            app:title="@string/app_name">
 
             <ImageView
-                android:id="@+id/pic1"
-                android:layout_width="141dp"
-                android:layout_height="81dp"
-                android:layout_marginBottom="668dp"
-                android:src="@drawable/pest1"
-                app:layout_constraintBottom_toBottomOf="parent"
-                tools:layout_editor_absoluteX="30dp" />
-
-            <ImageView
-                android:id="@+id/pic2"
-                android:layout_width="131dp"
-                android:layout_height="121dp"
-                android:src="@drawable/pest"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.87"
-                app:layout_constraintStart_toStartOf="@+id/pic1"
-                app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.011" />
-
-            <ImageView
-                android:id="@+id/pic3"
-                android:layout_width="131dp"
-                android:layout_height="74dp"
-                android:layout_marginTop="24dp"
-                android:fitsSystemWindows="true"
+                android:layout_width="match_parent"
+                android:layout_marginTop="20dp"
+                android:layout_height="270dp"
+                android:scaleType="centerCrop"
                 android:src="@drawable/fumi"
-                app:layout_constraintBottom_toTopOf="@+id/text5"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.142"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/text4"
-                app:layout_constraintVertical_bias="0.0" />
+                app:layout_collapseMode="parallax" />
 
-            <TextView
-                android:id="@+id/text4"
-                android:layout_width="358dp"
-                android:layout_height="62dp"
-                android:text="@string/they_deal_with_pest_control_on_the_following_rats_cockroaches_and_pet_pest_apart_from_pest_control_they_also_offer_cleaning_services"
-                android:textColor="@color/black"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.301"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.181"
-                tools:ignore="MissingConstraints" />
+            <androidx.appcompat.widget.Toolbar
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                app:layout_collapseMode="pin"
+                app:popupTheme="@style/ThemeOverlay.AppCompat.Dark" />
 
-            <TextView
-                android:id="@+id/text5"
-                android:layout_width="386dp"
-                android:layout_height="139dp"
-                android:layout_marginEnd="16dp"
-                android:layout_marginRight="16dp"
-                android:text="@string/we_are_the_best_choice_in_pest_control_as_we_have_advanced_and_smarter_solutions_which_are_eco_friendly_for_the_health_of_our_future_we_use_an_ipm_integrated_pest_management_approach_which_is_more_effective_and_environmentally_sensitive_this_involves_taking_advantage_of_all_appropriate_pest_management_strategies_including_pest_prevention_utilizing_green_methods_and_the_judicious_use_of_pesticides_with_low_to_no_toxicity_ipm_is_not_a_single_pest_control_method_but_rather_involves_integrating_multiple_control_methods_which_are_knowledge_based_and_use_cutting_edge_technologies"
-                android:textAllCaps="true"
-                android:textColor="#F33D3D"
-                android:textSize="12sp"
-                android:textStyle="italic"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.445" />
+        </com.google.android.material.appbar.CollapsingToolbarLayout>
 
-            <Button
-                android:id="@+id/next"
-                android:layout_width="96dp"
-                android:layout_height="26dp"
-                android:text="next"
-                android:textColor="@color/black"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="@+id/pic1"
-                app:layout_constraintTop_toBottomOf="@+id/text5" />
-        </androidx.constraintlayout.widget.ConstraintLayout>
-    </ScrollView>
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <!--Now add the NestedScollView-->
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:lineSpacingExtra="8sp"
+            android:padding="16dp"
+            android:text="Don’t plant ivy — it provides shelter and a food source for rodents: snails and slugs. Ivy on walls can form “rat ladders” to windows, attics and other interior spaces.
+Keep compost piles as far away from structures as possible and grass cut to no more than two inches tall.
+Maintain at least a 2-foot space between bushes, shrubs, fences, and buildings. Also, remove tree limbs within 3 feet of a structure or roof.
+Avoid having a bird feeder since it provides a source of food for rodents.
+Keep outdoor grills and cooking areas clean.
+Keep firewood off the ground and as far away from structures as possible to mitigate shelter opportunities.
+Use city-issue plastic trash bins. If cracked or missing a lid, contact the Department of Sanitation for a replacement.Indoor Recommendations:
+
+Encase all food items such as breakfast cereals, chips, and crackers in containers.
+Opt for garbage bins and compost containers with a top that seals tightly.
+Rinse food and beverage containers before discarding or recycling.
+Clean your garbage and recycling bins frequently.
+Do not leave pet food or water out overnight.
+Maintain stove tops clean and free of food scraps.
+De-clutter your home of papers, fabric, and any similar materials that attract rodents for nesting.
+Repair leaky pipes.
+Seal entry points around cabinets, interior walls, attic, and crawl spaces with steel wool, caulk, or 1/4″ x 1/4″ metal mesh.
+Maintain attic, crawl spaces, and cabinets near sinks clean and free of moisture."
+            android:textSize="20sp" />
 
 
-</LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

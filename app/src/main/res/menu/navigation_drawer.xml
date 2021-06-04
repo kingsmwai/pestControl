@@ -4,25 +4,37 @@
     <item android:title="@string/appnavigations">
             <item
                 android:id="@+id/Form"
-                android:title="Form"
+                android:title="Homfull Pest"
                 android:icon="@drawable/form"
                 android:iconTint="#3F51B5"
                 />
 
             <item
-                android:id="@+id/Advert"
+                android:id="@+id/MessageUs"
                 android:icon="@drawable/advert"
-                android:title="@string/AdvertActivity"
+                android:title="MessageUs"
                 android:iconTint="#3F51B5"
                 />
+
           <menu>
                 <item
                     android:title="@string/Search"
                     android:id="@+id/Search"
                     android:icon="@drawable/search"
                     android:iconTint="@color/black">
+<!--              <item-->
+<!--                  android:title="@string/ReachUs"-->
+<!--                  android:id="@+id/ReachUs"-->
+<!--                  android:icon="@drawable/search"-->
+<!--                  android:iconTint="@color/black">-->
 
-                </item>
+
+              </item>
             </menu>
             </item>
+    <item
+        android:title="Advert"
+        android:id="@+id/Advert"
+        android:icon="@drawable/search"/>
+
 </menu>

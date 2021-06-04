@@ -20,6 +20,7 @@ class CustomAdapter(private val context: Activity,
         val rowView = inflater.inflate(R.layout.activity_list_item,null,true)
         val textTitle: TextView = rowView.findViewById(R.id.textImagee1)
         val images: ImageView = rowView.findViewById(R.id.imageItem)
+
         textTitle.text = title[position]
         images.setImageResource(image[position])
 

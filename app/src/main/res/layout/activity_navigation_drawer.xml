@@ -8,34 +8,48 @@
     tools:openDrawer="start"
     android:id="@+id/drawerLayout"
     tools:context=".Navigationdrawer">
+    <include layout="@layout/activity_homepage1"/>
 
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-    >
+        >
         <androidx.appcompat.widget.Toolbar
-        android:layout_width="match_parent"
-        android:layout_height="?attr/actionBarSize"
-        android:background="#E5EDE8"
-        android:elevation="4dp"
-        android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
-        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
-        android:id="@+id/toolbar"
-        />
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="#DDD161"
+            android:elevation="4dp"
+            android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+            android:id="@+id/toolbar"
+            />
         <FrameLayout
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
             android:id="@+id/fragment_container"
-            android:layout_height="wrap_content"/>
+            />
     </LinearLayout>
-    <include layout="@layout/activity_button__nav"/>
+
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         >
     </androidx.constraintlayout.widget.ConstraintLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
 
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/navigation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+                      app:menu="@menu/button_nav"/>
+    </RelativeLayout>
     <com.google.android.material.navigation.NavigationView
         android:layout_width="wrap_content"
         android:id="@+id/navview"
@@ -43,8 +57,7 @@
         android:layout_gravity="start"
         app:headerLayout="@layout/nav_header"
         app:menu="@menu/navigation_drawer"
-        android:fitsSystemWindows="true"
-        tools:ignore="MissingConstraints" />
+        android:fitsSystemWindows="true"/>
 
 
 </androidx.drawerlayout.widget.DrawerLayout>

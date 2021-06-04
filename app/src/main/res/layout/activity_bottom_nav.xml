@@ -5,20 +5,23 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Button_Nav">
-    <include  layout="@layout/activity_home_page"/>
+    tools:context=".Bottom_nav">
+
+    <include
+        layout="@layout/activity_home_page"
+        android:layout_width="396dp"
+        android:layout_height="651dp" />
     <FrameLayout
         android:layout_width="match_parent"
-        android:layout_height="650dp"
+        android:layout_height="660dp"
         android:id="@+id/frame"/>
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:layout_width="match_parent"
-        android:layout_height="60dp"
+        android:layout_height="70dp"
         app:itemIconTint="@color/black"
         android:background="#CDD8E1"
-        android:id="@+id/button_view"
-        android:scrollbarStyle="outsideOverlay"
+        android:id="@+id/bottomNAV"
         android:layout_alignParentBottom="true"
         app:menu="@menu/button_nav"
         />

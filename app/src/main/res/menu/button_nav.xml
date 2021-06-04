@@ -8,12 +8,16 @@
 
         />
     <item
-        android:id="@+id/nav_advert"
+        android:id="@+id/nav_home"
         android:icon="@drawable/advert"
-        android:title="@string/advertt"
+        android:title="@string/Home"
         android:iconTint="#F44336"
 
         />
+    <item
+        android:id="@+id/nav_Advert"
+        android:icon="@color/black"
+        android:title="@string/advert1"/>
 
 
 </menu>

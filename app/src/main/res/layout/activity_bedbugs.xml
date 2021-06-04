@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="#CCCFDC"
+    android:layout_height="match_parent"
+    tools:context=".Bedbugs">
+
+    <TextView
+        android:id="@+id/beddingtext"
+        android:layout_width="243dp"
+        android:layout_height="29dp"
+        android:text="BEDBUGS TREATMENTS"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.022" />
+
+    <ImageView
+        android:id="@+id/bedding"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/downloadbugs"
+        android:tintMode="multiply"
+        android:tint="#CCCFDC"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.37"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.08" />
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="411dp"
+        android:layout_height="160dp"
+        android:lineSpacingExtra="6dp"
+        android:text="Blood stains on your sheets or pillowcases.
+Dark or rusty spots of bedbug excrement on sheets and mattresses, bed clothes, and walls.
+Bedbug fecal spots, egg shells, or shed skins in areas where bedbugs hide.
+An offensive, musty odor from the bugs' scent glands."
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:textStyle="normal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bedding"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="360dp"
+        android:layout_height="20dp"
+        android:text="Services Offered"
+        android:textColor="#E33C3C"
+        android:textSize="15sp"
+        android:textAlignment="center"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView10"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:layout_width="404dp"
+        android:layout_height="317dp"
+        android:layout_marginBottom="16dp"
+        android:lineSpacingExtra="5dp"
+        android:text="A cluttered home provides more places for bed bugs to hide and makes locating and treating them harder. If bed bugs are in your mattress, using special bed bug covers (encasements) on your mattress and box springs makes it harder for bed bugs to get to you while you sleep. Leave the encasements on for a year. Be sure to buy a product that has been tested for bed bugs and is strong enough to last for the full year without tearing.
+
+5. Regularly wash and heat-dry your bed sheets, blankets, bedspreads and any clothing that touches the floor.
+This reduces the number of bed bugs. Bed bugs and their eggs can hide in laundry containers/hampers Remember to clean them when you do the laundry."
+        android:textColor="@color/black"
+        android:textSize="16dp"
+        android:textStyle="normal"
+            app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
