@@ -15,11 +15,19 @@ class DatabaseHandler (context: Context) : SQLiteOpenHelper(context,DATABASE_NAM
         private val KEY_ID = "id"
         private val KEY_NAME = "name"
         private val KEY_EMAIL = "email"
+        private val KEY_VISIT_DATE = "visit_date"
+        private val KEY_PHONE_NO = "Phone_no"
+        private val KEY_LAST_NAME = "lastName"
+        private val KEY_FIRST_NAME = "firstName"
+        private val KEY_House_no = "House_no"
     }
 
     override fun onCreate(db: SQLiteDatabase?) {
-        val CREATE_CONTACTS_TABLE = ("CREATE TABLE " + TABLE_USERS + "("
-                + KEY_ID + " INTEGER PRIMARY KEY," + KEY_NAME + " TEXT,"
+        val CREATE_CONTACTS_TABLE = ("CREATE TABLE " + TABLE_USERS +
+                "("
+                + KEY_ID + " INTEGER PRIMARY KEY," + KEY_NAME + " TEXT,"+ KEY_FIRST_NAME +
+                " TEXT,"+ KEY_EMAIL + " TEXT,"+ KEY_LAST_NAME +
+                " TEXT,"+ KEY_PHONE_NO + " TEXT,"+ KEY_VISIT_DATE + " TEXT,"+ KEY_House_no + "NUMBER,"
                 + KEY_EMAIL + " TEXT" + ")")
         db?.execSQL(CREATE_CONTACTS_TABLE)
     }
@@ -34,6 +42,12 @@ class DatabaseHandler (context: Context) : SQLiteOpenHelper(context,DATABASE_NAM
         contentValues.put(KEY_ID, sqlListModel.userId)
         contentValues.put(KEY_NAME, sqlListModel.userName)
         contentValues.put(KEY_EMAIL, sqlListModel.userEmail)
+        contentValues.put(KEY_PHONE_NO, sqlListModel.Phone_no)
+        contentValues.put(KEY_FIRST_NAME, sqlListModel.firstName)
+        contentValues.put(KEY_LAST_NAME, sqlListModel.lastName)
+        contentValues.put(KEY_VISIT_DATE, sqlListModel.Visit_date)
+        contentValues.put(KEY_VISIT_DATE, sqlListModel.Visit_date)
+        contentValues.put(KEY_House_no, sqlListModel.House_no)
 
         val success = db.insert(TABLE_USERS,null,contentValues)
         db.close()
@@ -52,14 +66,33 @@ class DatabaseHandler (context: Context) : SQLiteOpenHelper(context,DATABASE_NAM
             return ArrayList()
         }
         var userId: Int
+        var lastName: String
+        var firstName: String
+        var Phone_no: Int
+        var Visit_date: Int
         var userName: String
+        var House_no: Int
         var userEmail: String
+
         if (cursor.moveToFirst()) {
             do {
                 userId = cursor.getInt(cursor.getColumnIndex("id"))
                 userName = cursor.getString(cursor.getColumnIndex("name"))
                 userEmail = cursor.getString(cursor.getColumnIndex("email"))
-                val emp= sqlListModel(userId = userId, userName = userName, userEmail = userEmail)
+                lastName = cursor.getString(cursor.getColumnIndex("lastName"))
+                firstName = cursor.getString(cursor.getColumnIndex("firstName"))
+                Phone_no = cursor.getInt(cursor.getColumnIndex("number"))
+                Visit_date = cursor.getInt(cursor.getColumnIndex("date"))
+                House_no =cursor.getInt(cursor.getColumnIndex( "number"))
+                val emp= sqlListModel(userId = userId,
+                        userName = userName,
+                        userEmail = userEmail,
+                        Email = userEmail,
+                        lastName = lastName,
+                        firstName = firstName,
+                        Visit_date = Visit_date,
+                        House_no = House_no,
+                        Phone_no = Phone_no)
                 userArray.add(emp)
             } while (cursor.moveToNext())
         }
